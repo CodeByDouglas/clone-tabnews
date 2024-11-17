@@ -1,0 +1,16 @@
+{
+  "name": "clone-tabnews",
+  "version": "1.0.0",
+  "description": "TabNews Clone - Projeto de Aprendizado do Curso.dev, Este repositório contém a recriação completa da plataforma TabNews, desenvolvida como parte do Curso.dev ministrado por Felipe Deschamps.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
