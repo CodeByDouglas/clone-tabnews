@@ -4,7 +4,10 @@
   "description": "TabNews Clone - Projeto de Aprendizado do Curso.dev, Este repositório contém a recriação completa da plataforma TabNews, desenvolvida como parte do Curso.dev ministrado por Felipe Deschamps.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run services:up && next dev",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
     "lint:chek": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
