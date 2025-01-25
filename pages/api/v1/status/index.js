@@ -1,7 +1,7 @@
 import database from "infra/database.js";
-import { version } from "react";
 
 async function status(request, response) {
+  let variavelEsquecida;
   const databaseName = process.env.POSTGRES_DB;
   const conexao_usada = await database.query({
     text: "SELECT count(*)::int FROM pg_stat_activity WHERE datname = $1;",
