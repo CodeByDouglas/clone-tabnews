@@ -15,4 +15,4 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run lint:prettier:chek
+      - run: npm run lint:prettier:check
