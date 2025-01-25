@@ -1,5 +1,4 @@
 import database from "infra/database.js";
-import { version } from "react";
 
 async function status(request, response) {
   const databaseName = process.env.POSTGRES_DB;
